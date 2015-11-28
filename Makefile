@@ -13,7 +13,6 @@ OBJS = $(foreach n,$(SUBDIRS),$(n).o)
 export OBJS_DIR BIN_DIR CFLAGS
 
 all: sub myapp
-	
 
 sub: 
 	$(foreach N,$(SUBDIRS),$(MAKE) -C $(N);)
@@ -21,7 +20,6 @@ sub:
 myapp: 
 	echo $(OBJS)
 	cd obj && $(CC) -o $@ $(OBJS) && mv myapp $(BIN_DIR)
-
 
 clean:
 	find ./ -name "*.o" -exec rm -f {} +

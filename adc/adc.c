@@ -1,10 +1,4 @@
-/*
-
-adc ²É¼¯
-*/
-#include "../include/adc.h"
-
-
+#include "adc.h"
 
 void adc_ins(void)
 {	

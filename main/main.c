@@ -1,25 +1,11 @@
-/*
-
-
-function: led shdow  
-          adc sampling
-          
-2015.11.05
-by wangxun          
-
-*/
-
-
-
-#include<stdio.h>
+#include <stdio.h>
 #include "led.h"
 #include "adc.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-	
-     led_shdow();
-     adc_ins();	
-	
-	   return 0;
+    led_shdow();
+    adc_ins();	
+
+    return 0;
 }
